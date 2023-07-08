@@ -1,0 +1,242 @@
+/* Default Styling */
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* heading-container */
+.excel
+{
+    height: 5vh;
+    background-color: #218c74;
+    font-size: 3vh;
+    color: #f1f2f6;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+/* menu-container : (Home, File, Insert, Layout, Help) */
+.menu-cont
+{
+    height: 5vh;
+    background-color: #218c74;
+    display: flex;
+}
+
+.menu-cont *
+{
+    font-size: 2.25vh;
+    color: #f1f2f6;
+    text-align: center;
+    padding-top: 1.25vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.file
+{
+    color: #218c74; 
+    background-color: #f1f2f6;
+}
+
+.menu-cont :hover 
+{
+    cursor: pointer;
+    color: #218c74; 
+    background-color: #f1f2f6;
+}
+
+/* actions-container */
+
+.action-cont
+{
+    display: flex;
+    background-color: #ecf0f1;
+    height: 5vh;
+    align-items: center;
+}
+
+.action-cont * 
+{
+    margin-left: 1vw;
+}
+
+.action-cont :hover 
+{
+    cursor: pointer;
+}
+
+/* logic to take colors as input */
+
+.color-prop {
+    position: relative;
+}
+
+.color-prop > input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*  formula container */
+
+.formula-cont
+{
+    background-color: #f1f2f6;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.formula-cont *
+{
+    margin-left: 1vw;
+    height: 3.5vh;
+}
+
+.address-bar 
+{
+    border: 0.3px solid black;
+    border-radius: 5%;
+    width: 8vw;
+    outline: none;
+    text-align: center;
+    font-size: 2.25vh;
+}
+
+.formula-icon 
+{
+    width: 2vw;
+}
+
+.formula-bar{
+    outline: none;
+    height: 4vh;
+    width: 86vw;
+    border: 0.3px solid;
+    font-size: 1.125rem;
+    margin-left: 1vw;
+    padding-left: 0.6vw;
+}  
+
+/* grid bar */
+.grid-cont
+{
+    height: 75vh;
+    width: 100vw;
+    position: relative;
+    overflow: scroll;
+}
+
+.dummy-cell
+{
+    height: 4.5vh;
+    width: 3vw;
+    background-color: #747d8c;
+}
+
+.row-cont
+{
+    height: 450vh;
+    width: 3vw;
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-cont
+{
+    position: absolute;
+    top: 0vh;
+    left: 3vw;
+    height: 4.5vh;
+    width: 195vw;
+    background-color: #ecf0f1;
+    display: flex;
+}
+
+.grid
+{
+    position: absolute;
+    top: 4.5vh;
+    left: 3vw;
+    height: 450vh;
+    width: 195vw;
+    background-color: #ecf0f1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* grid setup */
+
+.rowdiv
+{
+    height: 4.5vh;
+    width: 3vw;
+    background-color: #ecf0f1;
+    border: 0.1vh solid #747d8c;
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding-top: 0.9vh;
+    text-align: center;
+}
+
+.coldiv
+{
+    height: 4.5vh;
+    width: 7.5vw;
+    background-color: #ecf0f1;
+    border: 0.1vh solid #747d8c;
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding-top: 0.9vh;
+    text-align: center;
+    outline: none;
+}
+
+.griddiv
+{
+    height: 4.5vh;
+    width: 7.5vw;
+    background-color: #ecf0f1;
+    border: 0.1vh solid #747d8c;
+    outline: none;
+}
+
+/* Sheets Container */
+.sheet-cont
+{
+    height: 5vh;
+    width: 100vw;
+    background-color: #ecf0f1;
+    color: black;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+}
+
+.sheet-add-icon{
+    width: 2vw;
+    margin-left: 1.5vw;
+}
+
+.sheet-folder
+{
+    text-decoration: underline;
+    font-weight: bold;
+    display: flex;
+}
+
+.sheet
+{
+    margin-left: 2vw;
+}
